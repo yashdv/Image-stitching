@@ -1,0 +1,50 @@
+<html>
+<head>
+<center><h1>Computer Vision</h1></center>
+<center><h2>Assignment 3</h2></center>
+</head>
+<body>
+<p>Upload the two images to be processed</p>
+
+<form action="upload_file.php" method="post" enctype="multipart/form-data">
+<label for="file">Images:</label><br>
+<input type="file" name="file1" id="file1"><br>
+<input type="file" name="file2" id="file2"><br>
+<p>Select the parameters: </p>
+<p>Detectors
+<select name="Descriptor">
+<option value="SURF">SURF</option>
+<option value="FAST">FAST</option>
+<option value="STAR">STAR</option>
+<option value="SIFT">SIFT</option>
+<option value="ORB">ORB</option>
+<option value="MSER">MSER</option>
+<option value="GFTT">GFTT</option>
+<option value="HARRIS">HARRIS</option>
+<option value="Dense">Dense</option>
+</select></p>
+
+<p>Extractors
+<select name="Extractor">
+<option value="SURF">SURF</option>
+<option value="SIFT">SIFT</option>
+</select></p>
+
+<p>Matchers
+<select name="Matcher">
+<option value="BruteForce">BruteForce</option>
+<option value="BruteForce-L1">BruteForce-L1</option>
+<option value="FlannBased">FlannBased</option>
+</select></p>
+
+<p>Panorama
+<select name="Panorama">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></p>
+
+<input type="submit" name="submit" value="Submit">
+</form>
+
+</body>
+</html>
